@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Minha Página</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="bootstrap\bootstrap-5.1.3-dist/css/bootstrap.min.css">  <!--Tenho que prestar atenção na hora de linkar-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">     <!--Coloquei a pasta css/arquivo dentro da pasta-->
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light"> <!--Pego isso direto do site do bootstrap (para barra de navegação)-->
+           <a class="navbar-brand" href="#">  <!-- # significa que não linkei a nada-->
+                <img src="img/mrv.png"  width="220"  height="80" class="margin_mrv">   <!--Coloquei uma imagem aqui dentro do nav-->>
+           </a>
+           <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a  class="nav-link"   href="#quemsomos" >Quem somos</a> <!-- #quemsomos quando clicarem nisso,vai levar ele até meu id que criei na minha section (quemsomos)-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#parceiros">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                </ul>
+           </div>
+        </nav>
+        <section id="quemsomos"> <!--Criei essa seção e também direciono quem clica no (quem somos) na barra de navegação para ela-->
+            <div class="container-fluid quem-somos text-center margin">       <!--container-fluid para deixar a pág inteira da mesma cor, criei um class quem-somos para mudar o background-color e uma classe margin para adaptar com um padding-->
+                <h3>Quem Somos</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZYs6S0rrHR3JvIzCrox6aHjAAEE0z1Vq_g&usqp=CAU" class="rounded-circle" width="200" height="200">
+                <h3>Esse ano é nosso, pra cima!!!!!!!!!!!!!!</h3>
+            </div>
+        </section>
+        <section id="parceiros">
+            <div class="container-fluid text-center margin parceiros">
+                <h3 class="margin">Parceiros</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="https://hermes.dio.me/home/logo-dio.svg" width="100%">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="https://hermes.dio.me/home/logo-dio.svg" width="100%">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="https://hermes.dio.me/home/logo-dio.svg" width="100%">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="servicos">
+            <div class="conteiner-fluid  text-center margin servicos">
+                <h3 class="margin">SERVIÇOS</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p>App do Mac</p>
+                            <img src="https://www.mcdonalds.com.br/uploads/Artboard_1x_12cc16414a.png" width="100%" height="240">
+                        </div>
+                        <div class="col-lg-4">
+                            <p>App da playstation</p>
+                            <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps-app-video-thumb-01-28oct20$pt-br?$native$" width="100%" height="240">
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Cortes do Podpah</p>
+                            <img src="https://yt3.ggpht.com/ADHRjlL8uhHFC88sIAwZJ0Xr0U2ub-c6-R2q767qlsmokr5gGM6EHyh5GkRKV8faCTScXEL_=s900-c-k-c0x00ffffff-no-rj" width="100%" height="240">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <footer class="container-fluid text-center bg-footer margin">
+            <p>Desenvolvido por Bruno César </p>
+        </footer>
+    </body>
+</html>
